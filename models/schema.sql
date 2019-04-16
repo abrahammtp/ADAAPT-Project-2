@@ -1,0 +1,5 @@
+DROP DATABASE IF EXISTS usersAnswers_db;
+CREATE DATABASE usersAnswers_db;
+
+DROP DATABASE IF EXISTS usersData_db;
+CREATE DATABASE usersData_db;
