@@ -12,6 +12,10 @@ module.exports = function (app) {
     res.render('data');
   });
 
+  // app.get('/all', function (req, res) {
+  //   res.render('all');
+  // });
+
   app.get('/signup', function (req, res) {
     res.render('signup');
   });

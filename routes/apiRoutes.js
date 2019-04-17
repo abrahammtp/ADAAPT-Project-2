@@ -47,6 +47,15 @@ module.exports = function (app) {
       res.json(err);
     });
   });
+  // app.get('/api/data', function (req, res) {
+  //   db.Answers.findAll({
+  //     where: {
+  //       id: req.params.id
+  //     }
+  //   }).then(function (userGoals) {
+  //     res.json(userGoals);
+  //   });
+  // });
 
   // Route for logging user out
   app.get('/logout', function (req, res) {
