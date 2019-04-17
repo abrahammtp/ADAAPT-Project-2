@@ -24,6 +24,14 @@ module.exports = function (app) {
     res.render('all');
   });
 
+  app.get('/faq', function (req, res) {
+    res.render('faq');
+  });
+
+  app.get('/about', function (req, res) {
+    res.render('about');
+  });
+
   // Load example page and pass in an example by id
 
   // app.get('/data', function (req, res) {
