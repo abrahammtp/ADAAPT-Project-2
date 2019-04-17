@@ -21,7 +21,7 @@ module.exports = function (app) {
   });
 
   app.get('/home', function (req, res) {
-    res.render('home');
+    res.render('all');
   });
 
   // Load example page and pass in an example by id
