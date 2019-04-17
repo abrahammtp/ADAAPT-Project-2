@@ -4,15 +4,23 @@
 <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="https://unpkg.com/vue/dist/vue.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-    <link rel="stylesheet" href="/styles/styles.css" media="screen" title="no title" charset="utf-8">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link rel="stylesheet" href="/public/styles/styles.css">
+    <link rel="stylesheet" href="/public/css/materialize.css">
+    <script src="/public/js/materialize.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="js/index.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <script src="js/signup.js"></script>
+    <script src="js/data.js"></script>
     <title>Home Page</title>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('select').formSelect();
+        });
+    </script>
 </head>
 
 <body>
@@ -26,27 +34,20 @@
                             <ul id="nav-mobile" class="right hide-on-med-and-down">
                                     <li><a href="">About</a></li>
                                     <li><a href="">FAQ</a></li>
-                                    <li><a href="welcome.html">Sign Out</a></li>
+                                    <li><a href="/">Sign Out</a></li>
                                 </ul>
                     </div>
 
                     <ul class="tabs tabs-transparent">
                         <li class="tab"><a id="add-goal" class="btn-small">Add a goal</a></li>
-                        <li class="tab"><a id="all" class="btn-small">All Goals</a></li>
-                        <li class="tab"><a id="artists" href="">Artists</a></li>
-                        <li class="tab"><a id="places" href="">Places</a></li>
-                        <li class="tab"><a id="restaurants" href="">Restaurants</a></li>
-                        <li class="tab"><a id="movies" href="">Movies</a></li>
-                        <li class="tab"><a id="books" href="">Books</a></li>
-                        <li class="tab"><a id="activities" href="">Activities</a></li>
-                        <li class="tab"><a id="goals" href="">Other Goals</a></li>
+                        <li class="tab"><a id="all" class="btn-small">My Goals</a></li>
                     </ul>
                 </div>
             </div>
         </div>
     </nav>
     <div id="app">
-        {{ content }}
+        {{{ body }}}
     </div>
     <div id="footer">
         <p>© 2019 ADAAPT</p>
@@ -99,8 +100,9 @@ nav {
 }
 #menu-nav {
     position: relative;
-    left: 20%;
+    float: right;
     top: 12px;
+    left: 30px;
 }
 #artists {
     margin-left: 10px;
