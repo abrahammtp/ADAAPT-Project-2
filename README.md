@@ -4,8 +4,11 @@ This application is a way for a user to make and update their bucket list goals.
 ## Tech/Framework used
 1. Handlebars
 2. Materialize
-3. Dbeaver
-4. MAMP
+3. Passport
+4. JawsDB
+5. Heroku
+6. MySQL
+7. Sequelize
 
 
 ## How to work it
