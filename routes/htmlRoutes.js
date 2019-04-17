@@ -20,6 +20,10 @@ module.exports = function (app) {
     res.render('login');
   });
 
+  app.get('/home', function (req, res) {
+    res.render('home');
+  });
+
   // Load example page and pass in an example by id
 
   // app.get('/data', function (req, res) {
