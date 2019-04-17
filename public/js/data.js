@@ -44,7 +44,7 @@ $(document).ready(function () {
       activity: userAnswers.activity,
       goal: userAnswers.goal
     }).then(function (data) {
-      window.location.replace('/');
+      window.location.replace('/home');
     }).catch(handleAnswersErr);
   }
 
